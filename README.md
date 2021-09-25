@@ -28,7 +28,11 @@ Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 
 Gunakan wireshark filter expression ```ftp.request.command == RETR```
 
+![Picture1](https://user-images.githubusercontent.com/71380876/134761965-e527936b-d79c-48b2-a945-56c293aaa1a5.png)
+
 Karena kosong, maka dilakukan percobaan filter lainnnya menggunakan wireshark filter expression yaitu, ```ftp.response.code==150 || ftp.response.code==226```
+
+![Picture2](https://user-images.githubusercontent.com/71380876/134761976-8c6698e8-e441-4f41-91f4-efde2453d537.png)
 
 ### Soal 9
 Dari paket-paket yang menuju FTP terdapat indikasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
