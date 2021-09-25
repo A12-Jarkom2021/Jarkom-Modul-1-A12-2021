@@ -66,6 +66,13 @@ Masukan password untuk membuka file secret.zip. File berhasil dibuka
 
 ![Screenshot (1717)](https://user-images.githubusercontent.com/71380876/134759639-ff3fbd4a-db3b-4f6a-a7b0-4e3fff5d9397.png)
 
+### soal 11
+Filter sehingga wireshark hanya mengambil paket yang berasal dari post 80
+
+__Wireshark filter expression__ : ```udp.srcport == 80 || tcp.srcport == 80```
+
+![image](https://user-images.githubusercontent.com/81466736/134759894-e9c61a46-5f63-42e0-b541-d6eaecd4672a.png)
+
 
 
 
