@@ -67,13 +67,47 @@ Masukan password untuk membuka file secret.zip. File berhasil dibuka
 ![Screenshot (1717)](https://user-images.githubusercontent.com/71380876/134759639-ff3fbd4a-db3b-4f6a-a7b0-4e3fff5d9397.png)
 
 ### soal 11
-Filter sehingga wireshark hanya mengambil paket yang berasal dari post 80
+Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80
 
 __Wireshark filter expression__ : ```udp.srcport == 80 || tcp.srcport == 80```
 
 ![image](https://user-images.githubusercontent.com/81466736/134759894-e9c61a46-5f63-42e0-b541-d6eaecd4672a.png)
 
+### soal 12
+Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 
+__Wireshark filter expression__ : ```port 21```
 
+![image](https://user-images.githubusercontent.com/81466736/134760177-c96017bd-c658-46b8-9960-734c2fc52750.png)
 
+### soal 13
+Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 
+__Wireshark filter expression :__ ```dst port 443```
+
+![image](https://user-images.githubusercontent.com/81466736/134760164-42805a4d-29a1-4f1a-8249-010f9a62ab42.png)
+
+### soal 14
+Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
+
+pertama, buka kemenag.go.id
+
+![image](https://user-images.githubusercontent.com/81466736/134760065-8c7039de-bc04-4257-bb48-a35c48859591.png)
+
+kemudian isi __Wireshark filter expression__ dengan ```dst host kemenag.go.id``` lalu lakukan refresh pada page kemenag.go.id
+
+![image](https://user-images.githubusercontent.com/81466736/134760126-ace0614c-c398-4b96-9b6f-b73b5e3d203b.png)
+
+### soal 15
+Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+Ip yang digunakan :
+
+Untuk mengetahui ip, dapat menggunakan perintah ```ipconfig``` pada terminal
+
+![image](https://user-images.githubusercontent.com/81466736/134760138-8613795b-7f79-406e-aeb7-3a7cd7482fa1.png)
+
+__Wireshark filter expression :__ ```src host 192.168.1.6```
+
+![image](https://user-images.githubusercontent.com/81466736/134760147-22aa72c9-ab88-45be-9d83-bf7aa7cb483f.png)
+
+## Kendala
