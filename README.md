@@ -193,3 +193,4 @@ __Wireshark filter expression :__ ```src host 192.168.1.6```
 ![image](https://user-images.githubusercontent.com/81466736/134760147-22aa72c9-ab88-45be-9d83-bf7aa7cb483f.png)
 
 ## Kendala
+- Pada soal nomor 1, sempat terjadi kesalahan karena host yang dipilih ternyata bukan ichimarumaru.tech
