@@ -1,6 +1,84 @@
 # Jarkom-Modul-1-A12-2021
 Jarkom_Modul1_Lapres_A12
 
+**Praktikum Modul 1 - Jaringan Komputer 2021**
+**A12**
+-   Fiqey Indriati Eka Sari (05111940000015)
+-   Dyah Putri Nariswari (05111940000047)
+-   Muhammad Farrel Abhinaya (05111940000173)
+
+### Soal 1
+Sebutkan web server yang digunakan pada \"[[ichimarumaru.tech]{.ul}](http://ichimarumaru.tech/)\"!
+
+**wireshark filter expression:** http.host contains "ichimarumaru.tech"
+
+> Untuk mengetahui web server yang digunakan dapat menuliskan expression
+> http.host contains "ichimarumaru.tech"
+
+<img src="./media/image8.png" width="720">
+
+**wireshark filter expression:** tcp.stream eq 43
+
+Lalu, lakukan Follow -\> TCP stream dan ditemukan hasil seperti berikut.
+Web server yang digunakan ialah ECS (frv/669E)
+
+<img src="./media/image18.png" width="720">
+
+### Soal 2
+Temukan paket dari **web-web** yang menggunakan **basic authentication** method!
+
+> **wireshark filter expression:** http.authbasic
+>
+> <img src="./media/image2.png" width="720">
+
+### Soal 3
+
+Ikuti perintah di [[basic.ichimarumaru.tech]{.ul}](http://basic.ichimarumaru.tech/)! Username dan password bisa didapatkan dari file .*pcapng*!
+
+**wireshark filter expression:** http.host contains "basic.ichimarumaru.tech"
+
+> Pertama kita mengisi filter dengan expression http.host contains
+> "basic.ichimarumaru.tech"
+>
+> <img src="./media/image3.png" width="720">
+>
+> Setelah itu, kita temukan credentials yang berisi username dan
+> password untuk menuju ke web basic.ichimarumaru.tech
+
+**wireshark filter expression:** http.host contains
+basic.ichimarumaru.tech
+
+> <img src="./media/image22.png" width="720">
+>
+> <img src="./media/image26.png" width="720">
+>
+> Web berhasil terbuka, dan diminta untuk mengisi jawaban dari soal yang
+> tertera
+>
+> <img src="./media/image13.png" width="720">
+
+### Soal 4
+Temukan paket **mysql** yang mengandung **perintah** **query select**!
+
+> **wireshark filter expression:** mysql.query contains "select" \|\|
+> mysql.query contains "SELECT"
+>
+> <img src="./media/image23.png" width="720">
+>
+> <img src="./media/image19.png" width="720">
+
+### Soal 5
+Login ke [[portal.ichimarumaru.tech]{.ul}](http://portal.ichimarumaru.tech/) kemudian ikuti perintahnya! Username dan password bisa didapat dari **query insert** pada table **users** dari file .pcap!
+
+> **wireshark filter expression:** mysql.query contains "INSERT"
+>
+> <img src="./media/image27.png" width="720">
+>
+> INSERT INTO users (username,password) VALUES
+> (\"akakanomi\",md5(\"pemisah4lautan\"))
+>
+> <img src="./media/image30.png" width="720">
+
 ### Soal 6
 Cari username dan password ketika melakukan login ke FTP Server!
 
